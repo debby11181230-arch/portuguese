@@ -4,6 +4,7 @@
  */
 // @ts-nocheck
 import React, * as y from "react";
+import marioBannerImg from "./assets/mario_game_banner.png";
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import {
   ArrowLeft as Lt,
@@ -1376,7 +1377,7 @@ function Cg({ onBack: f }) {
     Y(false), d(0), Z();
   }, className: "mario-btn mario-btn-yellow px-6 py-2.5 text-black font-black flex items-center gap-2 cursor-pointer", children: [n.jsx(jt, { className: "w-4 h-4" }), n.jsx("span", { children: "\u91CD\u982D\u518D\u7DF4\u4E00\u904D" })] }), n.jsx("button", { onClick: f, className: "mario-btn mario-btn-red px-6 py-2.5 text-white font-black cursor-pointer", children: "\u8FD4\u56DE\u4E3B\u9801" })] })] })] });
 }
-const Tg = "/assets/mario_game_banner_1780816602934-BwTasZQ0.png";
+const Tg = marioBannerImg || "/assets/mario_game_banner_1780816602934-BwTasZQ0.png";
 function Eg() {
   const [f, h] = y.useState("menu"), d = () => {
     h("menu");
