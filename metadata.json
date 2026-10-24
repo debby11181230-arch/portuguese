@@ -1,0 +1,6 @@
+{
+  "name": "Profresora Iong - As Formas em Português",
+  "description": "Profresora Iong 葡語形狀與陰陽性配合：redondo/a、quadrado/a、retangular 與名詞陰陽性搭配",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

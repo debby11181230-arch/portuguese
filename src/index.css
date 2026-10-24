@@ -1,0 +1,202 @@
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fredoka:wght@400;600;700&display=swap";
+@import "tailwindcss";
+
+body {
+  color: #2d2d2d;
+  background-color: #5c94fc;
+  font-family: Fredoka, Helvetica Neue, Arial, sans-serif;
+}
+
+.mario-sky-bg {
+  background-color: #5c94fc;
+  background-image:
+    radial-gradient(at top, #abdbf8, #5c94fc),
+    radial-gradient(circle at 20% 12%, #ffffffd9 15px, #0000 15px),
+    radial-gradient(circle at 23% 15%, #ffffffd9 20px, #0000 20px),
+    radial-gradient(circle at 18% 16%, #ffffffd9 15px, #0000 15px),
+    radial-gradient(circle at 75% 22%, #ffffffd9 18px, #0000 18px),
+    radial-gradient(circle at 78% 25%, #ffffffd9 24px, #0000 24px),
+    radial-gradient(circle at 72% 26%, #ffffffd9 18px, #0000 18px);
+}
+
+.mario-box {
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 12px;
+  box-shadow: 6px 6px #000;
+}
+
+.mario-box-accent {
+  background-color: #fff8e7;
+  border: 4px solid #000;
+  border-radius: 12px;
+  box-shadow: 6px 6px #000;
+}
+
+.mario-btn {
+  border: 3px solid #000;
+  border-radius: 12px;
+  font-family: Fredoka, sans-serif;
+  font-weight: 700;
+  transition: all .1s;
+  transform: translate(0);
+  box-shadow: 4px 4px #000;
+}
+
+.mario-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px #000;
+}
+
+.mario-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px #000;
+}
+
+.mario-btn-red {
+  color: #fff;
+  background-color: #e52521;
+}
+
+.mario-btn-red:hover {
+  background-color: #ff3b30;
+}
+
+.mario-btn-yellow {
+  color: #000;
+  background-color: #fed42c;
+}
+
+.mario-btn-yellow:hover {
+  background-color: #ffe054;
+}
+
+.mario-btn-blue {
+  color: #fff;
+  background-color: #0043a4;
+}
+
+.mario-btn-blue:hover {
+  background-color: #0d5ccb;
+}
+
+.mario-btn-green {
+  color: #fff;
+  background-color: #00a24a;
+}
+
+.mario-btn-green:hover {
+  background-color: #02c35a;
+}
+
+.mario-btn-gray {
+  color: #fff;
+  background-color: #8c8c8c;
+}
+
+.mario-btn-gray:hover {
+  background-color: #a6a6a6;
+}
+
+.mario-qblock {
+  background-color: #fed42c;
+  border: 4px solid #000;
+  border-radius: 8px;
+  box-shadow: inset -4px -4px #c84c0c, 4px 4px #000;
+}
+
+.mario-brick {
+  background-color: #c84c0c;
+  border: 4px solid #000;
+  border-radius: 4px;
+  box-shadow: inset -4px -4px #943000, 4px 4px #000;
+}
+
+.mario-pipe {
+  background: linear-gradient(90deg, #148f21, #02c35a 30%, #00a24a 60%, #016f1c);
+  border: 4px solid #000;
+  box-shadow: 4px 4px #000;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #333;
+  border-left: 3px solid #000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  image-rendering: pixelated;
+  background: #c84c0c;
+  border: 2px solid #000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e52521;
+}
+
+.font-pixel {
+  letter-spacing: -.05em;
+  font-family: "Press Start 2P", monospace;
+}
+
+@keyframes mario-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.mario-bounce {
+  animation: .8s infinite mario-bounce;
+}
+
+@keyframes coin-spin {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.coin-spin {
+  animation: .6s linear infinite coin-spin;
+}
+
+@keyframes question-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-question-bounce {
+  animation: question-bounce 0.25s ease-out;
+}
+
+@keyframes question-shine {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.15);
+  }
+}
+
+.animate-question-shine {
+  animation: question-shine 1.5s ease-in-out infinite;
+}
+
+.animate-coin-spin {
+  animation: coin-spin 0.6s linear infinite;
+}
